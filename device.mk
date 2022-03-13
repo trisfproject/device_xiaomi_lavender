@@ -391,6 +391,10 @@ PRODUCT_PACKAGES += \
 
 # AOT Preload
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Nexuslauncher \
+    lawnchair \
+    Settings \
     SystemUI
 
 # Dex
