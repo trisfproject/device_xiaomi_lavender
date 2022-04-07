@@ -468,3 +468,7 @@ PRODUCT_PACKAGES += \
 # DeviceDoze
 PRODUCT_PACKAGES += \
     DeviceDoze
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    remove_packages
