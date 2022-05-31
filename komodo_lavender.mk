@@ -9,16 +9,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Nusantara stuff
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Komodo stuff
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 # Inherit game space
 $(call inherit-product-if-exists, packages/apps/GameSpace/gamespace.mk)
-NAD_BUILD_TYPE := OFFICIAL
+
+# Komodo Stuff
+KOMODO_OFFICIAL := true
+KOMODO_GAPPS_TYPE := gapps
+KOMODO_VARIANT := RELEASE
+
+# Gapps Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 USE_GAPPS := true
 USE_PIXEL_CHARGING := true
+
 # Device can use Quick Tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
@@ -27,7 +34,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, $(LOCAL_PATH)/device-hidl.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_lavender
+PRODUCT_NAME := komodo_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
