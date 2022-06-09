@@ -429,7 +429,7 @@
     <bool name="config_inflateSignalStrength">true</bool>
 
      <!-- Whether the display blanks itself when transitioning from a Doze to a non Doze state -->
-    <bool name="config_displayBlanksAfterDoze">true</bool>
+    <bool name="config_displayBlanksAfterDoze">false</bool>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
