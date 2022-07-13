@@ -18,6 +18,7 @@ $(call inherit-product-if-exists, packages/apps/GameSpace/gamespace.mk)
 KOMODO_OFFICIAL := true
 KOMODO_GAPPS_TYPE := gapps
 KOMODO_VARIANT := RELEASE
+KOMODO_LAWNCHAIR := true
 
 # Gapps Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
